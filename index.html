@@ -7,35 +7,107 @@
     <title>МоноИнфа</title>
 
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #222;
+            background-color: #A8D5BA;
+            padding: 8px 12px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .years {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .year {
+            display: block;
+            text-align: center;
+            padding: 12px 5px;
+            background: #f0f0f0;
+            color: #222;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .year:hover {
+            background: #A8D5BA;
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <h1>МоноИнфа</h1>
+    <div class="page">
 
-    <p>Архив ССО «Монолит»</p>
+        <h1>МоноИнфа</h1>
 
-    <h2>Архив по годам</h2>
+        <p class="subtitle">
+            Архив ССО «Монолит»
+        </p>
 
-    <ul>
-        <li><a href="2010.html">2010</a></li>
-        <li><a href="2011.html">2011</a></li>
-        <li><a href="2012.html">2012</a></li>
-        <li><a href="2013.html">2013</a></li>
-        <li><a href="2014.html">2014</a></li>
-        <li><a href="2015.html">2015</a></li>
-        <li><a href="2016.html">2016</a></li>
-        <li><a href="2017.html">2017</a></li>
-        <li><a href="2018.html">2018</a></li>
-        <li><a href="2019.html">2019</a></li>
-        <li><a href="2020.html">2020</a></li>
-        <li><a href="2021.html">2021</a></li>
-        <li><a href="2022.html">2022</a></li>
-        <li><a href="2023.html">2023</a></li>
-        <li><a href="2024.html">2024</a></li>
-        <li><a href="2025.html">2025</a></li>
-        <li><a href="2026.html">2026</a></li>
-    </ul>
+        <h2>Архив по годам</h2>
+
+        <div class="years">
+
+            <a class="year" href="2010.html">2010</a>
+            <a class="year" href="2011.html">2011</a>
+            <a class="year" href="2012.html">2012</a>
+            <a class="year" href="2013.html">2013</a>
+            <a class="year" href="2014.html">2014</a>
+            <a class="year" href="2015.html">2015</a>
+            <a class="year" href="2016.html">2016</a>
+            <a class="year" href="2017.html">2017</a>
+            <a class="year" href="2018.html">2018</a>
+            <a class="year" href="2019.html">2019</a>
+            <a class="year" href="2020.html">2020</a>
+            <a class="year" href="2021.html">2021</a>
+            <a class="year" href="2022.html">2022</a>
+            <a class="year" href="2023.html">2023</a>
+            <a class="year" href="2024.html">2024</a>
+            <a class="year" href="2025.html">2025</a>
+            <a class="year" href="2026.html">2026</a>
+
+        </div>
+
+    </div>
 
     <script>
         vkBridge.send("VKWebAppInit")
